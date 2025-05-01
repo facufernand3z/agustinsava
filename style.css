@@ -7,14 +7,22 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Hero Section */
-.hero {
-  background: url('header-bg.jpg') no-repeat center center;
-  background-size: cover;
-  position: relative;
+/* Banner superior */
+.top-banner {
+  background: transparent;
 }
 
-/* Efectos en imágenes de la galería */
+/* Header principal */
+.header {
+  /* Puedes agregar márgenes o padding adicional si lo deseas */
+}
+
+/* Estilo para la imagen de la obra artística */
+#about img {
+  max-width: 90%;
+}
+
+/* Estilos para las imágenes de la galería */
 .gallery-img {
   filter: grayscale(100%);
   transition: filter 0.5s, transform 0.3s;
@@ -24,14 +32,14 @@ body {
   transform: scale(1.05);
 }
 
-/* Encabezados */
+/* Encabezados de secciones */
 h2 {
   letter-spacing: 4px;
 }
 
 /* Lightbox Styles */
 #lightbox {
-  display: none; /* Se muestra cuando se hace clic */
+  display: none; /* Se mostrará al hacer clic */
   position: fixed;
   top: 0;
   left: 0;
@@ -50,7 +58,7 @@ h2 {
 
 /* Responsividad */
 @media (max-width: 768px) {
-  .hero h1 {
+  .header h1 {
     font-size: 4rem;
   }
 }
