@@ -7,22 +7,38 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Banner superior */
+/* Top Banner */
 .top-banner {
-  background: transparent;
+  /* Fondo transparente */
 }
 
-/* Header principal */
-.header {
-  /* Puedes agregar márgenes o padding adicional si lo deseas */
+/* Header */
+.header h1 {
+  /* El tamaño se ajusta para impactar en dispositivos grandes y pequeños */
 }
 
-/* Estilo para la imagen de la obra artística */
-#about img {
+/* Featured image styling */
+.featured-img {
   max-width: 90%;
 }
 
-/* Estilos para las imágenes de la galería */
+/* Botones de pestañas (tabs) */
+.tab-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.tab-btn.active,
+.tab-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Galería: imágenes */
 .gallery-img {
   filter: grayscale(100%);
   transition: filter 0.5s, transform 0.3s;
@@ -32,14 +48,8 @@ body {
   transform: scale(1.05);
 }
 
-/* Encabezados de secciones */
-h2 {
-  letter-spacing: 4px;
-}
-
 /* Lightbox Styles */
 #lightbox {
-  display: none; /* Se mostrará al hacer clic */
   position: fixed;
   top: 0;
   left: 0;
@@ -47,8 +57,9 @@ h2 {
   height: 100%;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7); /* Fondo mejorado con menor brillo */
   z-index: 100;
+  display: none; /* Oculto por defecto */
 }
 #lightbox img {
   max-width: 90%;
@@ -56,7 +67,7 @@ h2 {
   box-shadow: 0 0 15px #fff;
 }
 
-/* Responsividad */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .header h1 {
     font-size: 4rem;
