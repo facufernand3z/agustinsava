@@ -1,10 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("Página cargada correctamente.");
-    
-    const images = document.querySelectorAll("img.lazy");
-    images.forEach(img => {
-        img.setAttribute("loading", "lazy");
-    });
+    console.log("Portafolio cargado correctamente.");
 
     // Scroll suave en navegación
     document.querySelectorAll("nav ul li a").forEach(anchor => {
@@ -13,5 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetId = this.getAttribute("href").substring(1);
             document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
         });
+    });
+
+    // Cargar imágenes de forma optimizada
+    const images = document.querySelectorAll("img.lazy");
+    images.forEach(img => {
+        img.setAttribute("loading", "lazy");
     });
 });
