@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   console.log("Página actualizada sin decoraciones rojas cargada");
 
-  // Scroll suave en navegación.
+  // Implementación de scroll suave en la navegación
   document.querySelectorAll("nav ul li a").forEach(anchor => {
     anchor.addEventListener("click", function(e) {
       e.preventDefault();
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  // Habilitar carga diferida para imágenes con clase "lazy" (si se utiliza).
+  // Habilitar carga diferida para imágenes con clase "lazy" (si se utiliza)
   const images = document.querySelectorAll("img.lazy");
   images.forEach(img => {
     img.setAttribute("loading", "lazy");
