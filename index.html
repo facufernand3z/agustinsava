@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agustín Sava - Artista Visual</title>
-  <meta name="description" content="Portafolio de Agustín Sava: tatuajes, murales y pinturas que transforman ideas en arte visual." />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agustín Sava - Trash Polka Tattoo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+<body class="bg-black text-white font-sans">
+
+    <!-- Barra de navegación -->
+    <nav class="fixed top-0 left-0 w-full bg-red-600 shadow-md p-4 flex justify-between items-center z-50">
+        <h1 class="text-xl font-bold tracking-widest">AGUSTÍN SAVA</h1>
+        <ul class="flex space-x-4">
+            <li><a href="#about" class="hover:text-gray-300">Sobre mí</a></li>
+            <li><a href="#gallery" class="hover:text-gray-300">Galería</a></li>
+            <li><a href="#contact" class="hover:text-gray-300">Contacto</a></li>
+        </ul>
     </nav>
-    <h1>Agustín Sava</h1>
-    <p>Artista Visual</p>
-  </header>
 
-  <main>
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Soy un artista apasionado por los tatuajes, murales y pinturas. Mi trabajo busca transformar ideas en arte visual.</p>
-    </section>
+    <main class="max-w-5xl mx-auto px-6 mt-24">
+        <!-- Sección Sobre mí -->
+        <section id="about" class="mb-12 text-center border-l-8 border-red-600 pl-6">
+            <h2 class="text-4xl font-bold uppercase">Sobre mí</h2>
+            <p class="text-gray-400 text-lg">Soy un artista del tatuaje con un enfoque Trash Polka, combinando caos y precisión en cada obra.</p>
+        </section>
 
-    <section id="galeria">
-      <h2>Galería</h2>
-      <div class="gallery">
-        <figure>
-          <img src="images/tatuaje-artistico.jpg" alt="Tatuaje artístico realizado por Agustín Sava" />
-          <figcaption>Tatuaje Artístico</figcaption>
-        </figure>
-        <figure>
-          <img src="images/mural-urbano.jpg" alt="Mural urbano pintado por Agustín Sava" />
-          <figcaption>Mural Urbano</figcaption>
-        </figure>
-        <figure>
-          <img src="images/pintura-abstracta.jpg" alt="Pintura abstracta creada por Agustín Sava" />
-          <figcaption>Pintura Abstracta</figcaption>
-        </figure>
-        <figure>
-          <img src="images/tatuaje-en-progreso.jpg" alt="Tatuaje en progreso por Agustín Sava" />
-          <figcaption>Tatuaje en Progreso</figcaption>
-        </figure>
-      </div>
-    </section>
+        <!-- Sección Galería -->
+        <section id="gallery" class="mb-12">
+            <h2 class="text-4xl font-bold text-center uppercase">Galería</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <img src="imagen1.jpg" alt="Tatuaje Trash Polka" class="rounded-md shadow-lg transition-transform transform hover:scale-105">
+                <img src="imagen2.jpg" alt="Mural urbano" class="rounded-md shadow-lg transition-transform transform hover:scale-105">
+                <img src="imagen3.jpg" alt="Pintura abstracta" class="rounded-md shadow-lg transition-transform transform hover:scale-105">
+                <img src="imagen4.jpg" alt="Tatuaje en progreso" class="rounded-md shadow-lg transition-transform transform hover:scale-105">
+            </div>
+        </section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Sígueme en redes sociales o escríbeme para consultas.</p>
-      <ul class="social-links">
-        <li><a href="https://www.instagram.com/agustinsava" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="mailto:agustin.sava@example.com">Correo Electrónico</a></li>
-      </ul>
-    </section>
-  </main>
+        <!-- Sección Contacto -->
+        <section id="contact" class="mb-12 text-center">
+            <h2 class="text-4xl font-bold uppercase">Contacto</h2>
+            <p class="text-gray-400 text-lg">Sígueme en redes sociales o escríbeme para consultas.</p>
+            <a href="mailto:contacto@agustinsava.com" class="bg-red-600 px-6 py-3 rounded-lg mt-4 hover:bg-red-700">Enviar mensaje</a>
+        </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Agustín Sava - Todos los derechos reservados</p>
-  </footer>
+    <footer class="text-center py-6 text-gray-500">
+        <p>&copy; 2025 Agustín Sava - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
