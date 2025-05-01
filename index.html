@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agustín Sava - Trash Polka Tattoo</title>
-  <!-- Fuentes: Anton para títulos brutalistas y Poppins para el cuerpo -->
+  <!-- Fuentes: Anton para encabezados brutalistas y Poppins para cuerpo -->
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap" rel="stylesheet">
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -12,34 +12,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-black text-white">
-  <!-- Hero Section con imagen de fondo y overlay -->
-  <header class="hero relative h-screen flex items-center justify-center">
-    <div class="absolute inset-0 bg-black opacity-70"></div>
-    <div class="relative z-10 text-center">
-      <h1 class="text-7xl font-bold tracking-wider mb-4" style="font-family: 'Anton', sans-serif;">
-        AGUSTÍN SAVA
-      </h1>
-      <p class="text-2xl">
-        Fusion of Black and grey, Trash Polka &amp; Graffiti art
-      </p>
-    </div>
+
+  <!-- Banner superior con frase -->
+  <div class="top-banner text-center py-4">
+    <p class="text-xl">Fusion of Black and grey, Trash Polka &amp; Graffiti art</p>
+  </div>
+
+  <!-- Header principal con el nombre en grande -->
+  <header class="header text-center py-12">
+    <h1 class="text-7xl font-bold tracking-wider" style="font-family: 'Anton', sans-serif;">AGUSTÍN SAVA</h1>
   </header>
 
-  <main class="container mx-auto px-4 py-12">
-    <!-- Sección Sobre mí (la imagen no se expande) -->
-    <section id="about" class="mb-16 text-center">
-      <p class="text-gray-400 text-xl max-w-3xl mx-auto mb-8">
-        La mente del Pintor debe continuamente mudarse a tantos discursos cuantas son las figuras de los objetos notables que se le ponen delante; y en cada una de ellas detenerse a estudiarlas, y formar las reglas que le parezca, considerando el lugar, las circunstancias, las sombras y las luces.
-      </p>
-      <img src="obra_artistica.jpg" alt="Obra hermosa del artista" class="mx-auto rounded shadow-lg transition duration-300">
-    </section>
+  <!-- Sección: Obra Artística (esta imagen no se expande) -->
+  <section id="about" class="mb-16 text-center">
+    <img src="obra_artistica.jpg" alt="Obra hermosa del artista" class="mx-auto rounded shadow-lg transition duration-300 hover:scale-105">
+  </section>
 
-    <!-- Sección Galería -->
-    <section id="gallery" class="mb-16">
-      <!-- Sub-sección para Tattoos -->
+  <!-- Galería -->
+  <main class="container mx-auto px-4 py-12">
+    <!-- Sección Tattoos -->
+    <section id="tattoos" class="mb-16">
       <h2 class="text-4xl font-bold uppercase text-center mb-8" style="font-family: 'Anton', sans-serif;">Tattoos</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        <!-- Cada imagen con la clase "gallery-img" se abrirá en el lightbox -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <img src="tattoo1.jpg" alt="Tatuaje Trash Polka - tattoo 1" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
         <img src="tattoo2.jpg" alt="Tatuaje Trash Polka - tattoo 2" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
         <img src="tattoo3.jpg" alt="Tatuaje Trash Polka - tattoo 3" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
@@ -49,8 +43,10 @@
         <img src="tattoo7.jpg" alt="Tatuaje Trash Polka - tattoo 7" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
         <img src="tattoo8.jpg" alt="Tatuaje Trash Polka - tattoo 8" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
       </div>
+    </section>
 
-      <!-- Sub-sección para Graffiti -->
+    <!-- Sección Graffiti -->
+    <section id="graffiti" class="mb-16">
       <h2 class="text-4xl font-bold uppercase text-center mb-8" style="font-family: 'Anton', sans-serif;">Graffiti</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <img src="graffiti1.jpg" alt="Graffiti - graffiti 1" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
@@ -63,20 +59,18 @@
         <img src="graffiti8.jpg" alt="Graffiti - graffiti 8" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
       </div>
     </section>
-
-    <!-- Sección de Contacto -->
-    <section id="contact" class="mb-16 text-center">
-      <h2 class="text-4xl font-bold uppercase mb-4" style="font-family: 'Anton', sans-serif;">Contacto</h2>
-      <p class="text-gray-400 text-xl mb-6">
-        Conecta conmigo para conocer mi trabajo más reciente.
-      </p>
-      <a href="https://www.instagram.com/agustin.sava.tattoo" target="_blank" class="bg-red-600 px-8 py-4 rounded-lg text-2xl font-bold uppercase hover:bg-red-700 transition">
-        Ver en Instagram
-      </a>
-    </section>
   </main>
 
-  <!-- Lightbox Container (se activará al hacer clic en una imagen de la galería) -->
+  <!-- Sección de Contacto -->
+  <section id="contact" class="text-center mb-16">
+    <h2 class="text-4xl font-bold uppercase mb-4" style="font-family: 'Anton', sans-serif;">Contacto</h2>
+    <p class="text-gray-400 text-xl mb-6">Conecta conmigo para conocer mi trabajo más reciente.</p>
+    <a href="https://www.instagram.com/agustin.sava.tattoo" target="_blank" class="bg-red-600 px-8 py-4 rounded-lg text-2xl font-bold uppercase hover:bg-red-700 transition">
+      Ver en Instagram
+    </a>
+  </section>
+
+  <!-- Lightbox Container: se activa al hacer clic en imágenes de la galería -->
   <div id="lightbox" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-90 z-50">
     <img id="lightbox-img" src="" alt="Imagen ampliada" class="max-w-full max-h-full">
   </div>
@@ -88,4 +82,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
