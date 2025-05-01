@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agustín Sava - Arte & Tatuajes</title>
+    <title>Agustín Sava - Portafolio de Arte</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
     <!-- Barra de navegación -->
-    <nav class="fixed top-0 left-0 w-full bg-gray-800 shadow-md p-4 flex justify-between items-center">
+    <nav class="fixed top-0 left-0 w-full bg-gray-800 shadow-md p-4 flex justify-between items-center z-50">
         <h1 class="text-xl font-bold">Agustín Sava</h1>
         <ul class="flex space-x-4">
             <li><a href="#about" class="hover:text-gray-400">Sobre mí</a></li>
@@ -19,26 +19,32 @@
         </ul>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-4 mt-16">
-        <section id="about" class="mb-8">
-            <h2 class="text-2xl font-semibold">Sobre mí</h2>
-            <p class="text-gray-400">Bienvenido a mi página web. Aquí encontrarás mis trabajos, desde tatuajes personalizados hasta murales artísticos.</p>
+    <main class="max-w-4xl mx-auto px-4 mt-20">
+        <!-- Sección Sobre mí -->
+        <section id="about" class="mb-12 text-center">
+            <h2 class="text-3xl font-bold">Sobre mí</h2>
+            <p class="text-gray-400">Soy un artista apasionado por los tatuajes, murales y pinturas. Mi trabajo busca transformar ideas en arte visual.</p>
         </section>
-    
-        <section id="gallery" class="mb-8">
-            <h2 class="text-2xl font-semibold">Galería</h2>
-            <div class="grid grid-cols-2 gap-4">
-                <img src="imagen1.jpg" alt="Tatuaje artístico" class="rounded-md shadow-md lazy">
-                <img src="imagen2.jpg" alt="Mural urbano" class="rounded-md shadow-md lazy">
+
+        <!-- Sección Galería -->
+        <section id="gallery" class="mb-12">
+            <h2 class="text-3xl font-bold text-center">Galería</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <img src="imagen1.jpg" alt="Tatuaje artístico" class="rounded-md shadow-lg transition-transform transform hover:scale-105">
+                <img src="imagen2.jpg" alt="Mural urbano" class="rounded-md shadow-lg transition-transform transform hover:scale-105">
+                <img src="imagen3.jpg" alt="Pintura abstracta" class="rounded-md shadow-lg transition-transform transform hover:scale-105">
+                <img src="imagen4.jpg" alt="Tatuaje en progreso" class="rounded-md shadow-lg transition-transform transform hover:scale-105">
             </div>
         </section>
-    
-        <section id="contact" class="mb-8">
-            <h2 class="text-2xl font-semibold">Contacto</h2>
+
+        <!-- Sección Contacto -->
+        <section id="contact" class="mb-12 text-center">
+            <h2 class="text-3xl font-bold">Contacto</h2>
             <p class="text-gray-400">Sígueme en redes sociales o escríbeme para consultas.</p>
+            <a href="mailto:contacto@agustinsava.com" class="bg-blue-500 px-4 py-2 rounded-lg mt-4 hover:bg-blue-600">Enviar mensaje</a>
         </section>
     </main>
-    
+
     <footer class="text-center py-6 text-gray-500">
         <p>&copy; 2025 Agustín Sava - Todos los derechos reservados</p>
     </footer>
