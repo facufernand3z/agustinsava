@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agustín Sava - Arte & Tatuajes</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-900 text-white font-sans">
-    <header class="text-center py-8">
-        <h1 class="text-4xl font-bold">Agustín Sava</h1>
-        <p class="text-lg text-gray-300">Tatuajes, murales y pinturas</p>
-    </header>
-    
-    <main class="max-w-4xl mx-auto px-4">
-        <section class="mb-8">
+
+    <!-- Barra de navegación -->
+    <nav class="fixed top-0 left-0 w-full bg-gray-800 shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Agustín Sava</h1>
+        <ul class="flex space-x-4">
+            <li><a href="#about" class="hover:text-gray-400">Sobre mí</a></li>
+            <li><a href="#gallery" class="hover:text-gray-400">Galería</a></li>
+            <li><a href="#contact" class="hover:text-gray-400">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 mt-16">
+        <section id="about" class="mb-8">
             <h2 class="text-2xl font-semibold">Sobre mí</h2>
             <p class="text-gray-400">Bienvenido a mi página web. Aquí encontrarás mis trabajos, desde tatuajes personalizados hasta murales artísticos.</p>
         </section>
     
-        <section class="mb-8">
+        <section id="gallery" class="mb-8">
             <h2 class="text-2xl font-semibold">Galería</h2>
-            <p class="text-gray-400">Próximamente imágenes de mis proyectos.</p>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="imagen1.jpg" alt="Tatuaje artístico" class="rounded-md shadow-md lazy">
+                <img src="imagen2.jpg" alt="Mural urbano" class="rounded-md shadow-md lazy">
+            </div>
         </section>
     
-        <section class="mb-8">
+        <section id="contact" class="mb-8">
             <h2 class="text-2xl font-semibold">Contacto</h2>
             <p class="text-gray-400">Sígueme en redes sociales o escríbeme para consultas.</p>
         </section>
@@ -32,5 +42,7 @@
     <footer class="text-center py-6 text-gray-500">
         <p>&copy; 2025 Agustín Sava - Todos los derechos reservados</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
