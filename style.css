@@ -13,7 +13,7 @@ nav ul li a {
 }
 
 /* Hero Section con imagen de fondo */
-/* Reemplaza 'header-bg.jpg' por la imagen deseada que refleje la estética profesional del tatuador */
+/* Reemplaza 'header-bg.jpg' por la imagen deseada que refleje la estética profesional */
 .hero {
   background: url('header-bg.jpg') no-repeat center center;
   background-size: cover;
