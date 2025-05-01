@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-black text-white">
-
   <!-- Navegación (fondo negro) -->
   <nav class="fixed top-0 left-0 w-full bg-black shadow-lg z-50">
     <div class="container mx-auto p-4 flex justify-between items-center">
@@ -42,21 +41,20 @@
   </header>
 
   <main class="container mx-auto px-4 py-12">
-    <!-- Sección Sobre mí -->
+    <!-- Sección Sobre mí sin título, solo párrafo y la obra del artista -->
     <section id="about" class="mb-16 text-center">
-      <div class="inline-block">
-        <h2 class="text-4xl font-bold uppercase mb-4" style="font-family: 'Anton', sans-serif;">Sobre mí</h2>
-        <p class="text-gray-400 text-xl">
-          Fusion of Black and grey, Trash Polka &amp; Graffiti art
-        </p>
-      </div>
+      <p class="text-gray-400 text-xl max-w-3xl mx-auto mb-8">
+        La mente del Pintor debe continuamente mudarse a tantos discursos cuantas son las figuras de los objetos notables que se le ponen delante; y en cada una de ellas detenerse a estudiarlas, y formar las reglas que le parezca, considerando el lugar, las circunstancias, las sombras y las luces.
+      </p>
+      <!-- Imagen de la obra hermosa del artista (coloca el archivo en el mismo directorio) -->
+      <img src="obra_artistica.jpg" alt="Obra hermosa del artista" class="mx-auto rounded shadow-lg transition duration-300 hover:scale-105">
     </section>
 
     <!-- Sección Galería -->
     <section id="gallery" class="mb-16">
       <h2 class="text-4xl font-bold uppercase text-center mb-8" style="font-family: 'Anton', sans-serif;">Galería</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <!-- Asegúrate de colocar las imágenes dentro de la carpeta "images" -->
+        <!-- Se asume que las imágenes se encuentran en el mismo directorio -->
         <img src="obra1.jpg" alt="Tatuaje Trash Polka - obra 1" class="trabajo-img rounded shadow-lg transition duration-300 hover:scale-105">
         <img src="obra2.jpg" alt="Tatuaje Trash Polka - obra 2" class="trabajo-img rounded shadow-lg transition duration-300 hover:scale-105">
         <img src="obra3.jpg" alt="Tatuaje Trash Polka - obra 3" class="trabajo-img rounded shadow-lg transition duration-300 hover:scale-105">
