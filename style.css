@@ -1,53 +1,47 @@
+/* Estilos base */
 body {
-    font-family: 'Bebas Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    color: white;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Navegación */
 nav ul li a {
-    transition: color 0.3s ease-in-out;
-    font-weight: bold;
-    text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: rgba(200, 0, 0, 0.9);
+/* Hero Section con imagen de fondo */
+/* Reemplaza 'header-bg.jpg' por la imagen deseada que refleje la estética profesional del tatuador */
+.hero {
+  background: url('header-bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
 }
 
-img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-    filter: grayscale(100%);
+/* Efectos en imágenes de la galería */
+.trabajo-img {
+  filter: grayscale(100%);
+  transition: filter 0.5s, transform 0.3s;
+}
+.trabajo-img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
-img:hover {
-    transform: scale(1.05);
-    filter: grayscale(0%);
-}
-
+/* Encabezados con tracking */
 h2 {
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
+  letter-spacing: 4px;
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 4rem;
+  }
 }
