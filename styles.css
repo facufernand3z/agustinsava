@@ -1,131 +1,53 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Tipografía y colores */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
-  padding: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
 }
 
-/* Navegación */
+nav ul li a {
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 nav {
-  background-color: #fff;
-  padding: 10px 0;
-  margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(200, 0, 0, 0.9);
 }
 
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    filter: grayscale(100%);
 }
 
-.nav-list a {
-  text-decoration: none;
-  color: #007acc;
-  font-weight: bold;
+img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
 }
 
-.nav-list a:hover {
-  text-decoration: underline;
+h2 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
-/* Encabezado */
-header {
-  text-align: center;
-  margin-bottom: 40px;
+/* Responsividad */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
 }
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-/* Secciones */
-section {
-  margin-bottom: 40px;
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* Galería */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.gallery figure {
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: center;
-}
-
-.gallery img {
-  max-width: 100%;
-  height: auto;
-}
-
-.gallery figcaption {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Contacto */
-.social-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.social-links a {
-  text-decoration: none;
-  color: #007acc;
-}
-
-.social-links a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #fff;
-  border-top: 1px solid #ddd;
-  margin-top: 40px;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .nav-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-}
-
-
