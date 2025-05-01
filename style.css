@@ -7,13 +7,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Navegación */
-nav ul li a {
-  transition: color 0.3s ease-in-out;
-}
-
-/* Hero Section con imagen de fondo */
-/* Reemplaza 'header-bg.jpg' por la imagen deseada que refleje la estética profesional */
+/* Hero Section */
 .hero {
   background: url('header-bg.jpg') no-repeat center center;
   background-size: cover;
@@ -21,26 +15,41 @@ nav ul li a {
 }
 
 /* Efectos en imágenes de la galería */
-.trabajo-img {
+.gallery-img {
   filter: grayscale(100%);
   transition: filter 0.5s, transform 0.3s;
 }
-.trabajo-img:hover {
+.gallery-img:hover {
   filter: grayscale(0%);
   transform: scale(1.05);
 }
 
-/* Encabezados con tracking */
+/* Encabezados */
 h2 {
   letter-spacing: 4px;
 }
 
+/* Lightbox Styles */
+#lightbox {
+  display: none; /* Se muestra cuando se hace clic */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+}
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 15px #fff;
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
   .hero h1 {
     font-size: 4rem;
   }
