@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agustín Sava - Trash Polka Tattoo</title>
-  <!-- Fuentes: Anton para encabezados brutalistas y Poppins para cuerpo -->
+  <!-- Fuentes: Anton para encabezados brutalistas y Poppins para el cuerpo -->
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap" rel="stylesheet">
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -12,55 +12,60 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-black text-white">
-
-  <!-- Banner superior con frase -->
+  
+  <!-- Top Banner con la frase inspiracional -->
   <div class="top-banner text-center py-4">
     <p class="text-xl">Fusion of Black and grey, Trash Polka &amp; Graffiti art</p>
   </div>
-
-  <!-- Header principal con el nombre en grande -->
+  
+  <!-- Header principal: Nombre en grande -->
   <header class="header text-center py-12">
     <h1 class="text-7xl font-bold tracking-wider" style="font-family: 'Anton', sans-serif;">AGUSTÍN SAVA</h1>
   </header>
-
-  <!-- Sección: Obra Artística (esta imagen no se expande) -->
-  <section id="about" class="mb-16 text-center">
-    <img src="obra_artistica.jpg" alt="Obra hermosa del artista" class="mx-auto rounded shadow-lg transition duration-300 hover:scale-105">
+  
+  <!-- Imagen Destacada: Obra Artística (esta no se expande) -->
+  <section id="featured" class="mb-16 text-center">
+    <img src="obra_artistica.jpg" alt="Obra hermosa del artista" class="featured-img mx-auto rounded shadow-lg transition duration-300">
   </section>
-
+  
+  <!-- Pestañas para filtrar la galería -->
+  <section id="gallery-tabs" class="mb-8 text-center">
+    <button id="btn-tattoos" class="tab-btn active">Tattoos</button>
+    <button id="btn-graffiti" class="tab-btn">Graffiti</button>
+  </section>
+  
   <!-- Galería -->
   <main class="container mx-auto px-4 py-12">
-    <!-- Sección Tattoos -->
-    <section id="tattoos" class="mb-16">
-      <h2 class="text-4xl font-bold uppercase text-center mb-8" style="font-family: 'Anton', sans-serif;">Tattoos</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <img src="tattoo1.jpg" alt="Tatuaje Trash Polka - tattoo 1" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="tattoo2.jpg" alt="Tatuaje Trash Polka - tattoo 2" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="tattoo3.jpg" alt="Tatuaje Trash Polka - tattoo 3" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="tattoo4.jpg" alt="Tatuaje Trash Polka - tattoo 4" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="tattoo5.jpg" alt="Tatuaje Trash Polka - tattoo 5" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="tattoo6.jpg" alt="Tatuaje Trash Polka - tattoo 6" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="tattoo7.jpg" alt="Tatuaje Trash Polka - tattoo 7" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="tattoo8.jpg" alt="Tatuaje Trash Polka - tattoo 8" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+    <div id="gallery">
+      <!-- Galería de Tattoos -->
+      <div id="tattoos" class="gallery-section">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <img src="tattoo1.jpg" alt="Tatuaje Trash Polka - tattoo 1" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="tattoo2.jpg" alt="Tatuaje Trash Polka - tattoo 2" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="tattoo3.jpg" alt="Tatuaje Trash Polka - tattoo 3" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="tattoo4.jpg" alt="Tatuaje Trash Polka - tattoo 4" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="tattoo5.jpg" alt="Tatuaje Trash Polka - tattoo 5" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="tattoo6.jpg" alt="Tatuaje Trash Polka - tattoo 6" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="tattoo7.jpg" alt="Tatuaje Trash Polka - tattoo 7" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="tattoo8.jpg" alt="Tatuaje Trash Polka - tattoo 8" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+        </div>
       </div>
-    </section>
-
-    <!-- Sección Graffiti -->
-    <section id="graffiti" class="mb-16">
-      <h2 class="text-4xl font-bold uppercase text-center mb-8" style="font-family: 'Anton', sans-serif;">Graffiti</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <img src="graffiti1.jpg" alt="Graffiti - graffiti 1" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="graffiti2.jpg" alt="Graffiti - graffiti 2" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="graffiti3.jpg" alt="Graffiti - graffiti 3" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="graffiti4.jpg" alt="Graffiti - graffiti 4" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="graffiti5.jpg" alt="Graffiti - graffiti 5" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="graffiti6.jpg" alt="Graffiti - graffiti 6" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="graffiti7.jpg" alt="Graffiti - graffiti 7" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
-        <img src="graffiti8.jpg" alt="Graffiti - graffiti 8" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+      <!-- Galería de Graffiti -->
+      <div id="graffiti" class="gallery-section" style="display: none;">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <img src="graffiti1.jpg" alt="Graffiti - graffiti 1" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="graffiti2.jpg" alt="Graffiti - graffiti 2" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="graffiti3.jpg" alt="Graffiti - graffiti 3" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="graffiti4.jpg" alt="Graffiti - graffiti 4" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="graffiti5.jpg" alt="Graffiti - graffiti 5" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="graffiti6.jpg" alt="Graffiti - graffiti 6" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="graffiti7.jpg" alt="Graffiti - graffiti 7" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+          <img src="graffiti8.jpg" alt="Graffiti - graffiti 8" class="gallery-img rounded shadow-lg transition duration-300 hover:scale-105 cursor-pointer">
+        </div>
       </div>
-    </section>
+    </div>
   </main>
-
+  
   <!-- Sección de Contacto -->
   <section id="contact" class="text-center mb-16">
     <h2 class="text-4xl font-bold uppercase mb-4" style="font-family: 'Anton', sans-serif;">Contacto</h2>
@@ -69,16 +74,17 @@
       Ver en Instagram
     </a>
   </section>
-
-  <!-- Lightbox Container: se activa al hacer clic en imágenes de la galería -->
-  <div id="lightbox" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-90 z-50">
+  
+  <!-- Lightbox Container (se activa al hacer clic en imágenes de galería) -->
+  <div id="lightbox" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-70 z-50">
     <img id="lightbox-img" src="" alt="Imagen ampliada" class="max-w-full max-h-full">
   </div>
-
+  
+  <!-- Footer -->
   <footer class="text-center py-6">
     <p class="text-gray-600">&copy; 2025 Agustín Sava - Todos los derechos reservados</p>
   </footer>
-
+  
   <script src="script.js"></script>
 </body>
 </html>
